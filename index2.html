@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cordon-telematics</title>
+ 
+  <!-- script -->
+  <Script src="script.js" defer></Script>
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/logo-1.png" rel="icon">
+  <link href="assets/img/apple-touch-logo.png" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .Port-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px; /* Adjust the max-width as needed */
+      margin: auto;
+    }
+    .swiper-container {
+      width: 100%;
+      padding: 20px 0; /* Adjust padding to space out the slider */
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-item {
+      width: 80%; /* Adjust the width to reduce image size */
+      height: auto;
+      border: 3px solid #ccc; /* Add border */
+      border-radius: 10px; /* Optional: Add border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    }
+    .swiper-pagination {
+      bottom: 10px;
+      text-align: center;
+    }
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #000;
+      opacity: 0.6;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: #66ffcc;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 20px; /* Adjust font size */
+      cursor: pointer;
+      z-index: 10;
+      transition: background-color 0.3s, font-size 0.3s; /* Add transition for hover effect */
+    }
+    .swiper-button-next {
+      right: 70px; /* Adjust position */
+    }
+    .swiper-button-prev {
+      left: -25px; /* Adjust position */
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: rgba(89, 212, 187, 0.8);
+      font-size: 22px; /* Increase font size on hover */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  
+    
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index2.html"><img src="assets/img/logo/logo-2.png" width="50" height="80" alt="" class="img-fluid"></a><a href="index2.html" style="font-size: 24px;">Cordon</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="IMG-20221108-WA0047.png" alt="" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero" style="color:#66ffcc">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#contact" class="get-started-btn scrollto">CONTACT US</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div class="video-background">
+    <video autoplay loop muted>
+        <source src="./assets/img/bg.mp4" type="video/mp4">
+      </video>
+    <br><br><br><br>
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1 style="font-size:2.3em; font-family: Times New Roman, Times, serif;"><span style="color:#66ffcc">Beyond Boundaries:</span> Driving Efficiency, Safety, and Intelligence with Telematics Excellence</h1>
+
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+          <ion-icon name="logo-web-component" style="color:#66ffcc; width: 50px;height: 50px;"></ion-icon> 
+            <h3><a href="">AT-101</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+          <ion-icon name="shield-checkmark-outline" style="color:#66ffcc; width: 50px;height: 50px;"></ion-icon>
+            <h3><a href="">AT-400</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+          <ion-icon name="logo-stencil" style="color:#66ffcc; width: 50px;height: 50px;"></ion-icon> 
+            <h3><a href="">Asset Tracker</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+          <ion-icon name="shield-half-outline" style="color:#66ffcc; width: 50px;height: 50px;"></ion-icon>
+            <h3><a href="">Cordon Lite</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+          <ion-icon name="logo-xing" style="color:#66ffcc; width: 50px;height: 50px;"></ion-icon> 
+            <h3><a href="">OBD-II</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+</div>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="./assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3> Cordon Telemetics PVT LTD </h3>
+            <p class="fst-italic">
+            Welcome to Cordon Telematics, a pioneering force dedicated to revolutionizing business vehicle management. Through the deployment of state-of-the-art tracking solutions, we empower enterprises with real-time data and actionable insights. Our unwavering commitment extends to optimizing fleet performance, elevating safety standards, and seamlessly streamlining operations for our valued clients.
+            At Cordon Telematics, we take pride in delivering comprehensive solutions that optimize efficiency and innovation in the field of vehicle management. Our professional ethos is rooted in a relentless pursuit of excellence, ensuring that businesses experience a transformative journey towards enhanced productivity and operational excellence. </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i><span style="color:red">Mission: </span>Our mission is to empower businesses with cutting-edge telematics solutions, enabling them to make data-driven decisions and achieve operational excellence. </li>
+              <li><i class="ri-check-double-line"></i><span style="color:red">Values: </span>We are committed to integrity, innovation, and customer-centricity. These values drive everything we do, from product development to client relationships. </li>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/5.png" class="img-fluid" alt="" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("./assets/img/cordon2.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Fleet Tracking</h4>
+              <p>Real-time GPS tracking, route optimization, and performance analytics for efficient fleet management.</p></a>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Transport Automation Tool</h4>
+              <p>Combining Web applications, Mobile Apps, GIS to offer cutting edge transport management tool.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-images"></i>
+              <h4>CAN Solutions</h4>
+              <p>CAN based fuel monitoring solutions, CAN based EV Diagnostics.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-shield"></i>
+              <h4>Dash Camera Solutions</h4>
+              <p>Driver Behaviour Analysis.
+                    Harsh Breaking,
+                    Harsh speeding,
+                    Sudden lane changing,
+                    Two way communication,
+                    Dual Channel recording,
+                    Immobilizer,
+                    Live streaming,
+                    Gps Tracking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Services</p>
+        </div>
+
+    <div class="row">    <a href="Fleet Tracking.html">
+         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-truck-moving"></i></div>
+              <h4><a href="Fleet Tracking.html">Fleet Tracking</a></h4>
+              Real-time GPS tracking, route optimization, and performance analytics for efficient fleet management.</p>
+            </div>
+          </div></a>
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box"><a href="Transport.html">
+              <div class="icon"><i class="fa-solid fa-users-gear"></i></div>
+              <h4><a href="Transport.html">Transport Automation Tool</a></h4>
+              <p>Combining Web applications, Mobile Apps, GIS to offer cutting edge transport management tool.</p>
+            </div>
+          </div></a>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box"><a href="CAN.html">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="CAN.html">CAN Solutions</a></h4>
+              <p> CAN based fuel monitoring solutions, CAN based EV Diagnostics. </p>
+            </div>
+          </div></a>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"><a href="Camera.html">
+              <div class="icon"><i class="fa-solid fa-camera"></i></div>
+              <h4><a href="Camera.html"> Dash Camera Solutions </a></h4>
+              <p> Driver Behaviour Analysis.
+                    Harsh Breaking,
+                    Harsh speeding,
+                    Sudden lane changing,
+                    Two way communication,
+                    Dual Channel recording,
+                    Immobilizer,
+                    Live streaming,
+                    Gps Tracking.</p>
+            </div>
+          </div></a>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box"><a href="ondemand.html">
+              <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
+              <h4><a href="ondemand.html">On call Software </a></h4>
+              <p>Integrated end to end on call software with call taker, dispatcher, tracker, supervisor terminals with E -trip sheet with digital signature.</p>
+            </div>
+          </div></a>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box"><a href="ITMS.html">
+              <div class="icon"><img src="assets/img/brainstorming.svg" alt="Brainstorming Icon" width="40" height="50"></div>
+              <h4><a href="ITMS.html">ITMS</a></h4>
+              <p>Intelligent Transport Management System.We specialize in optimizing fleet operations through real-time tracking, proactive maintenance, driver performance analytics, and fuel management. </p>
+            </div>
+          </div></a>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box"><a href="GOVISO.html">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="GOVISO.html">Govt Approved AIS 140 unit </a></h4>
+              <p>AIS 140 device </p>
+            </div>
+          </div></a>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+  <section id="dates" class="dates">
+    <div class="journey">
+      <h3 style="color:white;text-align:left;">Our journey...</h3>
+    <br>
+    </div>
+   <div class="timeline"> 
+    <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">📡</i>Telematics Launch 2017</h2>
+              <span class="date">2017</span>
+              <p>Introduction of our first telematics solution, improving fleet management efficiency.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">🚛</i>Fleet Expansion 2018</h2>
+              <span class="date">2018</span>
+              <p>Expanded telematics to a wider range of vehicles, enhancing data collection and analysis.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">📈</i>Data Analytics Integration 2019</h2>
+              <span class="date">2019</span>
+              <p>Integrated advanced analytics for real-time tracking and predictive maintenance.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">🔒</i>Enhanced Security 2020</h2>
+              <span class="date">2020</span>
+              <p>Implemented robust security features to protect telematics data and ensure privacy.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">🌍</i>Global Reach 2021</h2>
+              <span class="date">2021</span>
+              <p>Expanded our telematics solutions globally, connecting fleets across continents.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-content">
+              <h2><i class="icon">🔧</i>AI Integration 2023</h2>
+              <span class="date">2023</span>
+              <p>Introduced AI capabilities for smarter and more efficient fleet management.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="L-100.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpeg" class="img-fluid" alt="">
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="AIS140.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="LC-400.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpeg" class="img-fluid" alt="">
+            </div>
+            </a>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="Dashcam.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpeg" class="img-fluid" alt="">
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="wp-30.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/1709809627WP-30L1.jpg" class="img-fluid" alt="">
+            </div>
+          </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="E-101.html">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/1718270644E101.jpeg" class="img-fluid" alt="">
+            </div>
+            </a>
+          </div>
+
+        </div> -->
+        <div class="Port-container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="L-100.html"><img src="./assets/img/portfolio/portfolio-1.jpeg" class="image-item"></a></div>
+              <div class="swiper-slide"><a href="AIS140.html"><img src="./assets/img/portfolio/portfolio-2.jpg" class="image-item"></a></div>
+              <div class="swiper-slide"><a href="LC-400.html"><img src="./assets/img/portfolio/portfolio-4.jpeg" class="image-item"></a></div>
+              <div class="swiper-slide"><a href="Dashcam.html"><img src="./assets/img/portfolio/portfolio-6.jpeg" class="image-item"></a></div>
+              <div class="swiper-slide"><a href="wp-30.html"><img src="./assets/img/portfolio/1709809627WP-30L1.jpg" class="image-item"></a></div>
+              <div class="swiper-slide"><a href="E-101.html"><img src="./assets/img/portfolio/1718270644E101.jpeg" class="image-item"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <br>
+    <br>
+
+
+
+
+
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+    
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <br>
+              <p> Unlock the Power of Real-Time Fleet Tracking
+                Enhance Efficiency, Improve Safety, and Drive Success with Cordon Telematics. Join the hundreds of businesses optimizing their fleet operations with our cutting-edge solutions. Get Started Today
+                </p>
+              <a class="cta-btn" href="#contact">Call To Action</a>
+            </div>
+    
+          </div>
+        </section><!-- End Cta Section -->
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Cordon Telemetics PVT LTD</h3>
+              <p>
+              Cordon Telematics. We are dedicated to revolutionizing the way businesses manage their vehicles, using state-of-the-art tracking solutions to provide real-time data and insights. Our comprehensive solutions are designed to optimize fleet performance, enhance safety, and streamline operations for our clients.
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                   <span style="padding-left:80px;">+</span><span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> With an extensive client base, we have provided telematics solutions to over 1,000 businesses, ensuring their operational success.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span style="padding-left:40px;">%</span><span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Client Satisfaction</strong> We prioritize client satisfaction, with a remarkable 98% satisfaction rate reflecting our commitment to excellence.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> With over 2 decade of expertise in telematics, we deliver top-notch fleet tracking solutions that enhance operational efficiency, ensure driver safety, and reduce costs. </p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Binnu Chellappan</h3>
+                <h4>Marketing Lead</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Vehicle Telematics market has reached the inflexion point and with E -Tolling through Gps being introduced this market is set to explode.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Dileep S Panicker</h3>
+                <h4>Operations Lead</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The key factor of any solution is the uptime and we will do all possible ensure optimum uptime of the Solutions supplied by us.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Srinatha BG</h3>
+                <h4>Automation Lead</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The Software solutions implemented by us are intelligent and help you to run your business in a Auto pilot mode.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Vijaya Rangan</h3>
+                <h4>Technical Lead</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  We need to provide solutions to the customers on an incremental basis without having to add new hardware.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/clients/imabge.jpg" class="img-fluid" alt="Team">
+              </div>
+              <div class="member-info text-center">
+                <h4>Our Team</h4>
+                <p>Meet the talented individuals behind our success.</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3421033626983!2d77.64597547508637!3d13.013873213950061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16d5e6181835%3A0x51936b5e563a66d1!2sCORDON%20TELEMATICS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1708590450944!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>24/1, 3rd and 4th Floor, 100 Feet Rd, HRBR Layout 1st Block, Balaji Layout, Subbaiahnapalya, Banasawadi, Bengaluru - 560043</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@cordontelematics.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 7305715512</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+
+
+
+            <div class="contact-form">
+              <form id="contactForm" action="https://formspree.io/f/xjkbbpwn" method="POST" onsubmit="setFormSubmitted()">
+                  <div class="row">
+                      <div class="col-md-6 form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                      </div>
+                  </div>
+                  <div class="form-group mt-3">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <br>
+                  <div class="text-center">
+                      <button type="submit" name="button1" class="btn btn-primary">Send Message</button>
+                  </div>
+                  <input type="hidden" name="_replyto" value="info@cordontelematics.com">
+                  <input type="hidden" name="_subject" value="Contact Form Submission">
+                  <input type="hidden" name="_cc" value="dileep@cordontelematics.com, binnu@cordontelematics.com, vijayarangan@cordontelematics.com">
+              </form>
+            </div>
+            
+            <script>
+              function setFormSubmitted() {
+                sessionStorage.setItem('formSubmitted', 'true');
+              }
+            
+              window.addEventListener('load', function() {
+                if (sessionStorage.getItem('formSubmitted') === 'true') {
+                  document.getElementById("contactForm").reset();
+                  sessionStorage.removeItem('formSubmitted');
+                }
+              });
+            </script>
+            
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Cordon</h3>
+              <p>
+              24/1, 3rd and 4th Floor, 100 Feet Rd, HRBR Layout 1st Block, Balaji Layout, Subbaiahnapalya, Banasawadi, Bengaluru - 560043<br><br>
+                <strong>Phone:</strong> +91 7305715512<br>
+                <strong>Email:</strong> info@cordontelematics.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://m.facebook.com/p/Cordon-Telematics-100070043926502/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/cordontelematics/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/cordon-telematics" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Fleet Tracking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Transport Automation Tool</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">CAN Solutions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Dash Camera Solutions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">On call Software</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Govt Approved AIS 140 unit</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Team </h4>
+            <h5>Expertise</h5>
+            <p>Our team comprises of skilled professionals with expertise in telematics, software development, analytics, and customer support.</p>
+            <h5>Diversity</h5>
+            <p>We celebrate diversity and inclusivity, bringing together a range of backgrounds and perspectives to drive innovation and collaboration.</p>
+            <h5>Passion</h5>
+            <p>Passionate about leveraging technology to solve real-world challenges, our team is dedicated to delivering excellence in every aspect of our business.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2024<strong>  <span>Cordon</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by SKS.<a href=""></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- <script>document.addEventListener('DOMContentLoaded', () => {
+    const thumb = document.querySelector('.slider-scrollbar .scrollbar-thumb');
+    let isDragging = false;
+  
+    thumb.addEventListener('mousedown', () => {
+      isDragging = true;
+      thumb.style.cursor = 'grabbing';
+    });
+  
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      thumb.style.cursor = 'grab';
+    });
+  
+    document.addEventListener('mousemove', (event) => {
+      if (isDragging) {
+        const track = document.querySelector('.slider-scrollbar .scrollbar-track');
+        const trackRect = track.getBoundingClientRect();
+        const newLeft = event.clientX - trackRect.left;
+        const maxLeft = trackRect.width - thumb.offsetWidth;
+        
+        thumb.style.left = `${Math.min(Math.max(newLeft, 0), maxLeft)}px`;
+      }
+    });
+  });
+  </script> --><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <style>
+    body a:hover{
+        color:#66ffcc;
+    }
+  </style>
+
+</body>
+
+</html>
